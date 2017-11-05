@@ -15,7 +15,27 @@
       ],
       "Effect": "Allow",
       "Resource": "*"
-    }
+    },
+        {
+            "Effect": "Allow",
+            "Action": "codedeploy:GetDeploymentConfig",
+            "Resource": "arn:aws:codedeploy:eu-central-1:340286451716:deploymentconfig:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "codedeploy:RegisterApplicationRevision",
+            "Resource": "arn:aws:codedeploy:eu-central-1:340286451716:application:SecondAWSCodeDeploy2GitHub"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "codedeploy:GetApplicationRevision",
+            "Resource": "arn:aws:codedeploy:eu-central-1:340286451716:application:SecondAWSCodeDeploy2GitHub"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "codedeploy:CreateDeployment",
+            "Resource": "arn:aws:codedeploy:eu-central-1:340286451716:deploymentgroup:SecondAWSCodeDeploy2GitHub/SecondAWSCodeDeploy2GitHub"
+        }
   ]
 }
 
@@ -49,6 +69,26 @@
           ],     
           "Effect": "Allow",     
           "Resource": "*"   
-      } 
+      },
+        {
+            "Effect": "Allow",
+            "Action": "codedeploy:GetDeploymentConfig",
+            "Resource": "arn:aws:codedeploy:eu-central-1:340286451716:deploymentconfig:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "codedeploy:RegisterApplicationRevision",
+            "Resource": "arn:aws:codedeploy:eu-central-1:340286451716:application:SecondAWSCodeDeploy2GitHub"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "codedeploy:GetApplicationRevision",
+            "Resource": "arn:aws:codedeploy:eu-central-1:340286451716:application:SecondAWSCodeDeploy2GitHub"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "codedeploy:CreateDeployment",
+            "Resource": "arn:aws:codedeploy:eu-central-1:340286451716:deploymentgroup:SecondAWSCodeDeploy2GitHub/SecondAWSCodeDeploy2GitHub"
+        }
     ]
 }
