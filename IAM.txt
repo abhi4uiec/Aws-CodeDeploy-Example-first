@@ -13,6 +13,7 @@
         "autoscaling:PutInstanceInService",
         "ec2:Describe*"
       ],
+      {
       "Effect": "Allow",
       "Resource": "*"
     },
@@ -66,7 +67,8 @@
           "Action": [       
               "s3:Get*",       
               "s3:List*"     
-          ],     
+          ],
+          {
           "Effect": "Allow",     
           "Resource": "*"   
       },
